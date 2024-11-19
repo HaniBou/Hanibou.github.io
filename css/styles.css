@@ -3780,6 +3780,23 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-hover-color);
 }
 
+
+/* Style the profile image */
+.navbar-brand img {
+    width: 160px;   /* Set image width */
+    height: 160px;  /* Set image height */
+    object-fit: cover; /* Crop the image to fit */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Add hover effects to the image */
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
