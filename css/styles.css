@@ -6653,6 +6653,7 @@ textarea.form-control-lg {
     opacity: 0.2;
   }
 }
+
 .placeholder-wave {
   -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
           mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
@@ -10877,6 +10878,9 @@ p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
+#about {
+  padding-top: 120px; /* Adjust based on navbar height */
+}
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10973,6 +10977,31 @@ section.resume-section {
 }
 section.resume-section .resume-section-content {
   width: 100%;
+}
+.resume-section-content .d-flex {
+  transition: all 0.3s ease;
+}
+
+.resume-section-content .d-flex:hover {
+  transform: scale(1.05); /* Slight zoom on hover for emphasis */
+}
+@media (max-width: 768px) {
+  .resume-section-content {
+      padding: 10px;
+  }
+
+  .d-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .flex-shrink-0 img {
+      height: 50px; /* Make logos smaller on smaller screens */
+  }
+
+  h3.mb-0 {
+      font-size: 1.1rem; /* Smaller font on mobile */
+  }
 }
 
 
